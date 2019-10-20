@@ -2,6 +2,10 @@
     src: url("../fonts/Roboto-Light.ttf");
     font-family: "Roboto";
 }
+@font-face {
+    src: url('../fonts/Roboto-Condensed.ttf');
+    font-family: "Roboto";
+}
 
 * {
     margin: 0;
@@ -9,6 +13,21 @@
     box-sizing: border-box;
 
 }
+
+.texto-capa {
+    text-align: right;
+    color: white;
+    vertical-align: middle;
+    font-display: "Roboto-Condensed";
+}
+section.img-capa {
+    background: url('../imgs/capa.png'),
+                linear-gradient(50deg, #ee711ea9, #f59e2b93);       
+    background-attachment: fixed;
+    width:100;
+}
+
+
 li {
     list-style: none;
 }
@@ -29,7 +48,6 @@ header {
 }
 .min-header {
     background-color: #fefeff; 
-    ;
     height: 80px;
 }
 .container {
@@ -50,7 +68,7 @@ header {
     transition: all 0.4s ease-in-out;
 }
 .max-logo img {
-    width: 161px;
+    width: 160px;
 }
 .min-logo img {
     width: 80px;
@@ -70,7 +88,7 @@ header {
 }
 .nav-bar a {
     position: relative;
-    font-family: "Taxi Drive";
+    font-family: "Roboto";
     text-transform: uppercase;
     transition: all 0.4s ease-in-out;
 }
@@ -140,7 +158,7 @@ header {
         width: 110px;
     }
     .min-logo img {
-        width: 80px;
+        width: 60px;
     }
     .menu {
         grid-area: nmu;
@@ -226,9 +244,9 @@ header {
      }
 
 }
-@media(max-width: 598px) {
+@media(max-width: 692px) {
         .max-header {
-            height: 80px;
+            height: 110px;
         }
 
         .min-header {
